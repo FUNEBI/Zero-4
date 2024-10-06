@@ -7,7 +7,7 @@
             <p class="mx-3">
               Impact Business Advisory Services
             </p>
-          <h1 class="mx-3">
+          <h1 class="mx-3 mb-4">
             Supporting Investors, <br> With Purpose.
           </h1>
           <div class="mx-3">
@@ -17,29 +17,34 @@
       </div>
     </div>
 
-    <div class="container-fluid text-center py-5 mt-5">
-        <h2 class="text-center py-2">Who we are
-        </h2> 
-        <p class="w-50 py-2 text-start mx-auto mt-5">
+    <div class="container-fluid text-center py-5 mt-5 who-are-we-div">
+        <h1 class="text-center py-2 fw-bold">Who we are
+        </h1> 
+        <p class="w-75 py-2 text-start mx-auto mt-5">
           Zero 4 is a Nigeria-based business advisory company dedicated to helping institutional, public, and private clients expand and structure their operations for sustainable growth. Our team offers deep local and international expertise in designing market entry strategies, optimizing business structures, and improving operational efficiencies. We work as strategic partners, providing insights and tailored solutions to drive business expansion, streamline operations, and enhance competitiveness across diverse sectors
         </p>
         
     </div>
-    <div class="container mx-auto">
+    <div class="container mx-auto py-5 sections-div">
+      <h1 class="text-center py-2 fw-bold">What We Do
+      </h1> 
+      <p class="w-75 mb-5 text-center mx-auto mt-1 lifecycle-p">
+        Zero 4 works with clients along all stages of the impact investment lifecycle.
+      </p>
         <div class="modal-body">
-            <div class="row justify-space-around">
+            <div class="row justify-space-around pt-5">
                 <div class="fv-row mb-7 col-lg-2 col-md-0 col-sm-0"></div>
               <div class="fv-row mb-7 col-lg-4 col-md-6 col-sm-12 px-3 my-1 py-3">
-                  <p class="text-center mb-2"><i class="fa-solid fa-list-check p-4 rounded-circle fa-6x"></i></p>
-                  <h1 class="text-center">Planning, Policies and Procedures</h1>
-                  <p>
+                  <p class="text-center mb-5"><i class="fa-solid fa-list-check p-4 rounded-circle fa-6x"></i></p>
+                  <h1 class="text-center my-4">Planning, Policies and Procedures</h1>
+                  <p class="icons-div">
                     We assist clients in designing investment strategy, creating investment policies, and developing processes and procedures that align their investments with their financial and impact goals.
                   </p>
               </div>
               <div class="fv-row mb-7 col-lg-4 col-md-6 col-sm-12 px-3 my-1 py-3">
-                    <p class="text-center mb-2"><i class="fa-solid fa-chart-line p-4 rounded-circle fa-6x"></i></p>
-                    <h1 class="text-center">Portfolio Management </h1>
-                    <p>
+                    <p class="text-center mb-5"><i class="fa-solid fa-chart-line p-4 rounded-circle fa-6x"></i></p>
+                    <h1 class="text-center my-4">Portfolio Management </h1>
+                    <p class="icons-div">
                         We manage impact investment portfolios across asset classes and impact themes - from sourcing, diligence and structuring to monitoring and reporting.
                     </p>
               </div>
@@ -48,22 +53,22 @@
             <div class="row justify-space-around mt-4">
                 <div class="fv-row mb-7 col-lg-2 col-md-0 col-sm-0"></div>
                 <div class="fv-row mb-7 col-lg-4 col-md-6 col-sm-12 ml-3 my-1 px-3 py-3">
-                  <p class="text-center mb-2"><i class="fa-solid fa-people-group p-4 rounded-circle fa-5x"></i></p>
-                    <h1 class="text-center">Fund Development and Syndication</h1>
-                    <p>
+                  <p class="text-center mb-5"><i class="fa-solid fa-people-group p-4 rounded-circle fa-5x"></i></p>
+                    <h1 class="text-center my-4">Fund Development and Syndication</h1>
+                    <p class="icons-div">
                         We develop funds to address thematic and/or geographic impact theses – from strategy and pipeline development to capitalization strategy, fund launch and full-service portfolio management.
                     </p>
                 </div>
                 <div class="fv-row mb-7 col-lg-4 col-md-6 col-sm-12 mr-3 my-1 px-3 py-3">
-                      <p class="text-center  mb-2"><i class="fa-solid fa-sliders p-4 rounded-circle fa-6x"></i></p>
-                      <h1 class="text-center">Training and Education</h1>
-                      <p>
+                      <p class="text-center  mb-5"><i class="fa-solid fa-sliders p-4 rounded-circle fa-6x"></i></p>
+                      <h1 class="text-center my-3">Training and Education</h1>
+                      <p class="icons-div">
                         We design and deliver customized training or coaching for trustees, staff, private investors, universities, and others interested in learning about impact investing.
                       </p>
                 </div>
                 <div class="fv-row mb-7 col-lg-2 col-md-0 col-sm-0"></div>
               </div>
-              <div class="text-center">
+              <div class="text-center mt-5">
                 <button class="btn display-bttn px-3 py-2">Contact Us</button>
               </div>
         </div>
@@ -75,34 +80,33 @@
         <p class="w-50 py-4 text-center mx-auto mt-1">
             Sign up with your email address to receive news and updates.
         </p>  
-        <form class="form w-25 mx-auto" [formGroup]='formGroup' ovalidate="novalidate" id="add-area-form">
-                <input 
-                    type="text" 
-                    class="form-control form-control-lg form-control-solid"
-                    name="email" placeholder=" Enter Email Address"
-                    formControlName="email"
-                    
-                />
-                <ng-container
-                  [ngTemplateOutlet]="formError"
-                  [ngTemplateOutletContext]="{
-                    validation: 'email',
-                    message: 'Correct Email Format is Required',
-                    control: formGroup.controls['email']
-                  }"
-                ></ng-container>
-                <br>
-                <button class="btn display-bttn px-3 py-2">Sign Up</button>
-        </form>      
+        <form class="form-inline w-25 mx-auto" [formGroup]='formGroup' ovalidate="novalidate" id="add-area-form">
+          <input 
+              type="text" 
+              class="form-control form-control-lg form-control-solid"
+              name="email" placeholder=" Enter Email Address"
+              formControlName="email"
+              
+          />
+          <ng-container
+            [ngTemplateOutlet]="formError"
+            [ngTemplateOutletContext]="{
+              validation: 'email',
+              message: 'Correct Email Format is Required',
+              control: formGroup.controls['email']
+            }"
+          ></ng-container>
+          <br>
+          <button class="btn display-bttn px-3 py-2">Sign Up</button>
+        </form>   
+
         <p class="mt-4">Your privacy matters to us</p>   
     </div>
-    <div class="container-fluid footer pb-3">
-      <h3 class="text-center mb-4">Terms Of Service</h3>
-
-          <p class="footer-text">
-            Zero 4  is a Registered Business Adviser. Advisory services are only offered to clients or prospective clients.. This website is solely for informational purposes. Past performance is no guarantee of future returns. Business involves risk and possible loss of principal capital. No advice may be rendered by Zero 4 unless a client service agreement is in place.
-          </p>
-       
+    <div class="container-fluid footer pt-5 pb-5">
+      <h3 class="text-center mb-4 pt-5">Terms Of Service</h3>
+          <p class="footer-text mt-5">
+            Zero 4  is a Registered Business Adviser. Advisory services are only offered to clients or prospective clients. This website is solely for informational purposes. Past performance is no guarantee of future returns. Business involves risk and possible loss of principal capital. No advice may be rendered by Zero 4 unless a client service agreement is in place.
+          </p>    
     </div>
 </div>
 <ng-template #formError let-control="control" let-message="message" let-validation="validation">
